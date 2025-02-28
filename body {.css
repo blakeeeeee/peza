@@ -4,12 +4,30 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #f5f5f5;
+  background-image: url('https://example.com/pizza-background.jpg'); /* Replace with your pizza image URL */
+  background-size: cover;
+  background-position: center;
+  animation: drippyBackground 5s infinite;
 }
 
-#header {
+/* Dripping Effect */
+@keyframes drippyBackground {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+/* Header Styling */
+header {
   background-color: #ffcc00;
-  padding: 30px;
+  padding: 20px;
 }
 
 h1 {
@@ -31,41 +49,19 @@ button:hover {
   background-color: #ff3300;
 }
 
-/* Pizza Drippy Background */
-body {
-  background-image: url('https://example.com/pizza-background.jpg'); /* Replace with your pizza image URL */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: drippyBackground 5s infinite;
-}
-
-/* Dripping Effect */
-@keyframes drippyBackground {
-  0% {
-    background-position: center;
-  }
-  50% {
-    background-position: center top;
-  }
-  100% {
-    background-position: center;
-  }
-}
-
 /* Game Container */
 #game-container {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 800px;
   height: 600px;
-  background-color: #000;
-  border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
+/* Footer Section */
 footer {
   margin-top: 30px;
   background-color: #333;
