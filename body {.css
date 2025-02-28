@@ -8,6 +8,11 @@ body {
   background-image: url('https://example.com/pizza-background.jpg'); /* Replace with your pizza image URL */
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   animation: drippyBackground 5s infinite;
 }
 
@@ -26,8 +31,11 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #ffcc00;
+  background-color: rgba(255, 204, 0, 0.8);
   padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
 }
 
 h1 {
@@ -54,9 +62,7 @@ button:hover {
   margin-top: 30px;
   width: 800px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7); /* Add some transparency for the background */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -67,4 +73,7 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 10px;
+  width: 100%;
+  text-align: center;
 }
+
