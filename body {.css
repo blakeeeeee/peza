@@ -1,34 +1,74 @@
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+#header {
+  background-color: #ffcc00;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff3300;
+}
+
+/* Pizza Drippy Background */
+body {
+  background-image: url('https://example.com/pizza-background.jpg'); /* Replace with your pizza image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: drippyBackground 5s infinite;
+}
+
+/* Dripping Effect */
+@keyframes drippyBackground {
+  0% {
+    background-position: center;
   }
-  
-  header {
-    background-color: #ffcc00;
-    padding: 20px;
+  50% {
+    background-position: center top;
   }
-  
-  h1 {
-    font-size: 3rem;
-    color: #fff;
+  100% {
+    background-position: center;
   }
-  
-  #game-container {
-    margin-top: 30px;
-    width: 800px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #000;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  footer {
-    margin-top: 30px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
+}
+
+/* Game Container */
+#game-container {
+  margin-top: 50px;
+  width: 800px;
+  height: 600px;
+  background-color: #000;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
